@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+:root {
+    --color-1: #DB524D;
+    --color-2: #FFFFFF;
+}
+body {
+    background-color: var(--color-1);
+    color: var(--color-2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Rubik', sans-serif;
+}
