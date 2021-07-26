@@ -1,5 +1,19 @@
+.blockbtn-time {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.title {
+    margin-bottom: 2rem;
+    font-weight: lighter;
+}
 .timeWrapper {
-    font-size: 8rem;
-    font-weight: 900;
+    font-size: 2rem;
+    font-weight: 500;
     letter-spacing: 2px;
+    border: 8px solid #fd2856;
+    
+    padding: 5rem;
 }

@@ -13,17 +13,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="timeWrapper">
-        <span id="minutes">00</span>:<span id="seconds">00</span>
-    </div>
-    <div class="buttonWrapper">
-        <button id="start" onclick="startTimer()">Start</button>
-        <button id="pause" onclick="pauseTimer()">Pause</button>
-        <button id="reset" onclick="resetTimer()">Reset</button>
+    <div class="blockbtn-time">
+        <h2 class="title">Pomodoro</h2>
+        <div class="timeWrapper">
+            <span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+        <div class="buttonWrapper">
+            <button id="start" onclick="startTimer()"><i class="icon fas fa-play-circle"></i></button>
+            <button id="pause" onclick="pauseTimer()"><i class="icon fas fa-pause-circle"></i></button>
+            <button id="reset" onclick="resetTimer()"><i class="icon fas fa-undo"></i></button>
+        </div>
     </div>
     
     
     
     <script src="assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/285bd2b860.js" crossorigin="anonymous"></script>
 </body>
 </html>

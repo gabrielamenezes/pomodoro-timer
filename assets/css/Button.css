@@ -2,15 +2,19 @@
     margin-top: 2rem;
 }
 button {
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
     color: var(--color-1);
     background-color: var(--color-2);
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2rem;
     cursor: pointer;
 }
-
+.icon {
+    color: var(--color-4);
+    font-size: 3rem;
+}
 button:nth-child(2) {
     margin: 0.5rem;
 }
