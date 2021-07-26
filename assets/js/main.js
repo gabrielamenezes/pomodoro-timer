@@ -7,8 +7,12 @@ let counterInterval = undefined
 const minutesEl = document.getElementById('minutes')
 const secondsEl = document.getElementById('seconds')
 
+const breakBtn = Array.from(document.getElementsByClassName('breakBtn'));
 
 updateCounterEl()
+
+
+
 
 function updateCounterEl() {
     //formatação da hora
