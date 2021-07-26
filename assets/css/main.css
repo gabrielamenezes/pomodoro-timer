@@ -9,6 +9,12 @@
     margin-bottom: 2rem;
     font-weight: lighter;
 }
+.break-title {
+    margin-top: 1rem;
+}
+.break-title, .description-break {
+    text-align: center;
+}
 .timeWrapper {
     font-size: 2rem;
     font-weight: 500;
