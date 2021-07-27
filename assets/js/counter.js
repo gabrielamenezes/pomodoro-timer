@@ -60,7 +60,7 @@ function startTimer() {
             --seconds;
         }*/
 
-        if(!seconds && !minutes) return clearInterval(counterInterval)
+        if(!seconds && !minutes) return destroyInterval()
         if(!seconds) {
             seconds = 59;
             --minutes
@@ -73,12 +73,15 @@ function startTimer() {
 }
 
 function pauseTimer() {
-    clearInterval(counterInterval)
+    destroyInterval()
 }
-
+function destroyInterval() {
+    clearInterval(counterInterval)
+    counterInterval = undefined
+}
 function resetTimer() {
     //parando o counter
-    clearInterval(counterInterval)
+    destroyInterval()
     //atribuindo 25 de novo ao contador
     minutes = 25;
     seconds = 0;
