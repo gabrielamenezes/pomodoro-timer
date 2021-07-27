@@ -1,14 +1,12 @@
-let minutes = 25;
-let seconds = 00;
 //atribuindo a variável no escopo global para conseguir usá-la dentro das funções
-let counterInterval = undefined
+let minutes, seconds, counterInterval = undefined;
 
 //pegando elementos
 const minutesEl = document.getElementById('minutes')
 const secondsEl = document.getElementById('seconds')
 
 const breakBtn = Array.from(document.getElementsByClassName('breakBtn'));
-updateCounterEl()
+resetTimer();
 
 
 //addEvent Listener em cada item de breakBtn
