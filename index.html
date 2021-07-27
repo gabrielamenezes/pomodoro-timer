@@ -39,7 +39,7 @@
         <div class="taskListWrap">
             <h2 class="title">TASK LIST</h2>
             <div class="addTaskBlock">
-                <a href="" class="addTask" onclick="modal.open()">
+                <a href="" class="addTask" onclick="modal.open(event)">
                     <i class="addIcon fas fa-plus-circle"></i>
                     Add Task
                 </a>
@@ -50,10 +50,10 @@
     <div class="modal-overlay">
         <div class="modal">
             <div id="form">
-                <h2>New Task</h2>
+                <h2 class="title">New Task</h2>
                 <form action="">
                     <div class="input-group">
-                        <label for="titleTask" class="sr-only"></label>
+                        <label for="titleTask" class="sr-only">New Task</label>
                         <input type="text" id="titleTask" placeholder="Task Title">
                     </div>
 
