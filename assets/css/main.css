@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 50%;
+    height: 100vh;
 }
 .title {
     margin-bottom: 2rem;
@@ -22,4 +23,44 @@
     border: 8px solid #fd2856;
     
     padding: 5rem;
+}
+
+.taskListBlock {
+    width: 50%;
+    height: 100vh;
+    background-color: var(--color-4);
+    display: flex;
+    height: 100vh;
+    
+}
+
+.taskListWrap {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    width: 100%;
+}
+
+.taskListBlock h2 {
+    color: var(--color-2);
+    text-align: center;
+}
+.addTaskBlock {
+    display: block;
+    width: 100%;
+}
+.addTask {
+    color: var(--color-2);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.479);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    align-items: center;
+}
+
+.addTask .addIcon {
+    font-size: 2rem;
+    margin-right: 0.5rem;
 }

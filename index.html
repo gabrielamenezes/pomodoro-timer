@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/config.css">
     <link rel="stylesheet" href="assets/css/Button.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/Modal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;900&display=swap" rel="stylesheet">
@@ -38,18 +39,37 @@
         <div class="taskListWrap">
             <h2 class="title">TASK LIST</h2>
             <div class="addTaskBlock">
-                <a href="" class="addTask">
+                <a href="" class="addTask" onclick="modal.open()">
                     <i class="addIcon fas fa-plus-circle"></i>
                     Add Task
                 </a>
             </div>
         </div>
     </section>
+
+    <div class="modal-overlay">
+        <div class="modal">
+            <div id="form">
+                <h2>New Task</h2>
+                <form action="">
+                    <div class="input-group">
+                        <label for="titleTask" class="sr-only"></label>
+                        <input type="text" id="titleTask" placeholder="Task Title">
+                    </div>
+
+                    <div class="input-group actions">
+                        <a href="#" class="button cancel" onclick="modal.close()">Cancel</a>
+                        <button class="button">Add Task</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     
     
     
     <script src="assets/js/counter.js"></script>
-    <script src="assets/js/tasklist.js"></script>
+    <script src="assets/js/Modal.js"></script>
     <script src="https://kit.fontawesome.com/285bd2b860.js" crossorigin="anonymous"></script>
 </body>
 </html>
