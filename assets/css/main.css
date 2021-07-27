@@ -43,6 +43,7 @@
 }
 .todo__list {
     display: flex;
+    flex-direction: column;
 }
 label.todo__item {
     display: flex;
