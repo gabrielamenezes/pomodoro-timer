@@ -11,6 +11,13 @@ button {
     font-size: 2rem;
     cursor: pointer;
 }
+button.delete {
+    padding: 0;
+    font-size: 1.2rem;
+}
+button i.delete:hover {
+    color: red;
+}
 
 .breakBtn {
     border: 1px solid var(--color-4);
