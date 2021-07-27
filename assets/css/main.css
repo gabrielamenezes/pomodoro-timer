@@ -30,15 +30,27 @@
     height: 100vh;
     background-color: var(--color-4);
     display: flex;
-    height: 100vh;
+    flex-direction: column;
+    position: relative;
     
 }
 
 .taskListWrap {
     display: flex;
     flex-direction: column;
-    padding: 1rem 1rem;
+    padding: 1rem 0;
     width: 100%;
+}
+.todo__list {
+    display: flex;
+}
+label.todo__item {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 1rem;
+    background: var(--color-2);
+    align-items: center;
 }
 
 .taskListBlock h2 {
@@ -48,6 +60,8 @@
 .addTaskBlock {
     display: block;
     width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 .addTask {
     color: var(--color-2);
