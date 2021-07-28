@@ -46,12 +46,18 @@
     flex-direction: column;
 }
 label.todo__item {
+    cursor: pointer;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
     padding: 1rem;
     background: var(--color-2);
     align-items: center;
+}
+
+label.todo__item > input[type="checkbox"]:checked + div {
+    text-decoration: line-through;
+    color: #ccc;
 }
 
 .taskListBlock h2 {
