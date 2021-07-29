@@ -27,9 +27,11 @@ const clearTask = () =>  {
     }
 }
 
+//atualizar a tela com as informações do database
 const render = () => {
     clearTask();
     dataBase.forEach(task => createTask(task.name, task.status))
+    //para cada obj no db, vao ser criadas task
 }
 
 const addTask = (event) => {
@@ -37,7 +39,8 @@ const addTask = (event) => {
     const input = document.getElementById('titleTask')
     dataBase.push({'name': input.value, 'status': '' })
     render();
-    modal.close();
+    input.value = '';
+    modal.close(); //fechar modal
 }
 document.getElementById('addTask').addEventListener('click', addTask)
 render();
