@@ -7,9 +7,6 @@
 </label>*/
 
 let dataBase = [
-    {'name': 'Estudar javascript', 'status': ''},
-    {'name': 'Estudar CSS', 'status': 'checked'}
-
 ];
 const createTask = (task, status='') => {
     const item = document.createElement('label') //criando o label
@@ -35,4 +32,12 @@ const render = () => {
     dataBase.forEach(task => createTask(task.name, task.status))
 }
 
+const addTask = (event) => {
+    event.preventDefault();
+    const input = document.getElementById('titleTask')
+    dataBase.push({'name': input.value, 'status': '' })
+    render();
+    modal.close();
+}
+document.getElementById('addTask').addEventListener('click', addTask)
 render();
