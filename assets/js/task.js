@@ -23,8 +23,15 @@ const createTask = (task, status='') => {
     document.querySelector('.todo__list').appendChild(item)
 }
 
+const clearTask = () =>  {
+    const todoList = document.getElementById('todoList');
+    while(todoList.firstChild) {
+        todoList.removeChild(todoList.lastChild)
+    }
+}
+
 const render = () => {
-    
+    clearTask();
     dataBase.forEach(task => createTask(task.name, task.status))
 }
 
