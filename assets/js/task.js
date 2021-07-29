@@ -6,7 +6,7 @@
     <button class="delete"><i class="fas fa-trash-alt delete"></i></button>
 </label>*/
 
-let bancoDeDados = [
+let dataBase = [
     {'name': 'Estudar javascript', 'status': ''},
     {'name': 'Estudar CSS', 'status': 'checked'}
 
@@ -25,7 +25,7 @@ const createTask = (task, status='') => {
 
 const render = () => {
     
-    bancoDeDados.forEach(task => createTask(task.name, task.status))
+    dataBase.forEach(task => createTask(task.name, task.status))
 }
 
 render();
