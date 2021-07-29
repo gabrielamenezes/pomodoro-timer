@@ -53,6 +53,15 @@ label.todo__item {
     padding: 1rem;
     background: var(--color-2);
     align-items: center;
+    margin: 0.5rem 0;
+}
+
+.todo__item div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    justify-content: center;
 }
 
 label.todo__item > input[type="checkbox"]:checked + div {
