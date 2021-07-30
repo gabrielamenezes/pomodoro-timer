@@ -47,6 +47,11 @@ const addTask = (event) => {
 const removeTask = indice => {
     dataBase.splice(`${indice}, 1`)//deletando 1 item a partir do indice enviado por parâmetro
     render();
+}
+
+const updateDataBase = indice => {
+    dataBase[indice].status = dataBase[indice].status === '' ? 'checked' : '';
+    render();
 } 
 const onClickTask = (event) => {
     const el = event.target;
@@ -54,6 +59,9 @@ const onClickTask = (event) => {
     if(el.getAttribute('data-id') === 'delete-icon') {
         const indice = el.dataset.indice
         removeTask(indice)
+    } else if(el.type === 'checkbox') {
+        const indice = el.dataset.indice
+        updateDataBase(indice)
     }
 }
 document.getElementById('todoList').addEventListener('click', onClickTask)
