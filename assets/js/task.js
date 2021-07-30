@@ -9,7 +9,7 @@
 //let dataBase = [];
 //se tiver vazio, retorna 1 array vazio senão pega do localStorage o item todoList
 const getdb = () => JSON.parse(localStorage.getItem('todoList')) ?? [];
-const setdb = dataBase => localStorage.setItem('todoList', JSON.stringify(dataBase))
+const setdb = dataBase => localStorage.setItem('todoList', JSON.stringify(dataBase));
 
 const createTask = (task, status='', indice) => {
     const item = document.createElement('label') //criando o label
@@ -34,14 +34,14 @@ const clearTask = () =>  {
 const render = () => {
     clearTask();
     const dataBase = getdb();
-    //dataBase.forEach((task, indice) => createTask(task.name, task.status, indice))
+    dataBase.forEach((task, indice) => createTask(task.name, task.status, indice))
     //para cada obj no db, vao ser criadas task
     //indice para poder diferenciar cada um dos itens
 }
 
 const addTask = (event) => {
     event.preventDefault();
-    const dataBase = getBanco();
+    const dataBase = getdb();
     const input = document.getElementById('titleTask')
     dataBase.push({'name': input.value, 'status': '' })
 
