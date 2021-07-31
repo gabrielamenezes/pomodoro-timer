@@ -40,6 +40,8 @@
     flex-direction: column;
     padding: 1rem 0;
     width: 100%;
+    height: 100%;
+    overflow-y: scroll;
 }
 .todo__list {
     display: flex;
@@ -76,13 +78,22 @@ label.todo__item > input[type="checkbox"]:checked + div {
 .addTaskBlock {
     display: block;
     width: 100%;
-    position: absolute;
     bottom: 0;
+    position: sticky;
+    background: #fd28567c;
+    border-top: 2px solid var(--color-2);
+    box-shadow: 0 0 0.5rem var(--color-2);
+    transition: all 100ms;
+}
+
+.addTaskBlock:hover {
+    background: #ff003755;
+    box-shadow: none;
 }
 .addTask {
     color: var(--color-2);
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.479);
+    /*background-color: rgba(255, 255, 255, 0.479);*/
     width: 100%;
     display: flex;
     justify-content: center;
