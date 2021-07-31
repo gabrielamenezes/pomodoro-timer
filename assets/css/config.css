@@ -20,3 +20,21 @@ body {
     height: 100vh;
     font-family: 'Rubik', sans-serif;
 }
+
+/**** scrollbar color ****/
+.taskListWrap::-webkit-scrollbar {
+    width: 11px;
+  }
+  .taskListWrap {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-2);
+  }
+  .taskListWrap::-webkit-scrollbar-track {
+    background: var(--color-4);
+  }
+  .taskListWrap::-webkit-scrollbar-thumb {
+    background-color: #E6AF2E;
+    border-radius: 6px;
+    border: 3px solid #E6AF2E;
+  }
+  
