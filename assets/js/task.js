@@ -53,7 +53,7 @@ const addTask = (event) => {
 
 const removeTask = indice => {
     const dataBase = getdb();
-    dataBase.splice(`${indice}, 1`)//deletando 1 item a partir do indice enviado por parâmetro
+    dataBase.splice(indice, 1)//deletando 1 item a partir do indice enviado por parâmetro
     setdb(dataBase) //atualiza localStorage
     render();
 }
